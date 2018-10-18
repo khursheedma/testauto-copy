@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test Automation Suite Selenium" verbose="1">
+  
+	<test name=" Test Automation Test Selenium ">
+	<parameter name="BrowserName" value="chrome" />  
+  
+    <classes>
+    	
+    	<class name="com.auto.tests.TestAutoHomePage" />
+    	<methods>
+    		
+    		<include name="test_HomePage_Title" />
+    	
+    	</methods>	
+    </classes> 
+    
+    </test> 
+    
+  
+</suite>

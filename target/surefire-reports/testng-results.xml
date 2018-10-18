@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Automation Suite Selenium" duration-ms="82792" started-at="2018-10-17T21:21:18Z" finished-at="2018-10-17T21:22:41Z">
+    <groups>
+    </groups>
+    <test name=" Test Automation Test Selenium " duration-ms="82792" started-at="2018-10-17T21:21:18Z" finished-at="2018-10-17T21:22:41Z">
+      <class name="com.auto.tests.TestAutoHomePage">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.auto.tests.TestAutoHomePage@59e84876]" name="setUp" is-config="true" duration-ms="13630" started-at="2018-10-17T21:21:18Z" finished-at="2018-10-17T21:21:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="test_HomePage_Title()[pri:0, instance:com.auto.tests.TestAutoHomePage@59e84876]" name="test_HomePage_Title" duration-ms="69113" started-at="2018-10-17T21:21:32Z" finished-at="2018-10-17T21:22:41Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

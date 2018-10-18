@@ -1,0 +1,43 @@
+INFO main AUTO_TESTS - START: In setUp method
+INFO main AUTO_TESTS - BEGIN: Set WebDriver
+INFO main AUTO_TESTS - END: Set WebDriver
+INFO main AUTO_TESTS - END: In setUp method
+INFO main AUTO_TESTS - START: test_HomePage_Title
+INFO main AUTO_TESTS - START: getHomePageTitle
+INFO main AUTO_TESTS - END: getHomePageTitle
+INFO main AUTO_TESTS - The home page title Today at Apple
+INFO main AUTO_TESTS - START: clickProgramLocationButton
+INFO main AUTO_TESTS - START: checkProgramLocationButtonEnabled
+INFO main AUTO_TESTS - END: checkProgramLocationButtonEnabled
+INFO main AUTO_TESTS - END: clickProgramLocationButton
+INFO main AUTO_TESTS - START: selectCountriesDropDown
+INFO main AUTO_TESTS - Australia
+INFO main AUTO_TESTS - Austria
+INFO main AUTO_TESTS - Belgium - Dutch
+INFO main AUTO_TESTS - Belgium - French
+INFO main AUTO_TESTS - Brazil
+INFO main AUTO_TESTS - Canada - English
+INFO main AUTO_TESTS - Canada - French
+INFO main AUTO_TESTS - China
+INFO main AUTO_TESTS - France
+INFO main AUTO_TESTS - Germany
+INFO main AUTO_TESTS - Hong Kong - Chinese
+INFO main AUTO_TESTS - Hong Kong - English
+INFO main AUTO_TESTS - Italy
+INFO main AUTO_TESTS - Japan
+INFO main AUTO_TESTS - Macao
+INFO main AUTO_TESTS - Mexico
+INFO main AUTO_TESTS - Netherlands
+INFO main AUTO_TESTS - Singapore
+INFO main AUTO_TESTS - South Korea
+INFO main AUTO_TESTS - Spain
+INFO main AUTO_TESTS - Sweden
+INFO main AUTO_TESTS - Switzerland - French
+INFO main AUTO_TESTS - Switzerland - German
+INFO main AUTO_TESTS - Taiwan
+INFO main AUTO_TESTS - Turkey
+INFO main AUTO_TESTS - United Arab Emirates
+INFO main AUTO_TESTS - United Kingdom
+INFO main AUTO_TESTS - United States
+INFO main AUTO_TESTS - END: selectCountriesDropDown
+INFO main AUTO_TESTS - END: test_HomePage_Title
