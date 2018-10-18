@@ -67,6 +67,10 @@ public class TestAutoHomePage {
 		logger.info("END: test_HomePage_Title");
 	}
 	
+	/*
+	 *  select country location from drop down menu and print
+	 */
+	
 	@Test
 	public void test_SelectCountryLocAndPrint() throws InterruptedException {
 		
