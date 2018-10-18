@@ -90,7 +90,7 @@ public class AutoHomePage {
 				logger.info(cValue);
 				cSelect.selectByIndex(i);
 				// Using sleep command so that changes can be noticed
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			}	
 			logger.info("END: selectCountriesDropDown");
 		}

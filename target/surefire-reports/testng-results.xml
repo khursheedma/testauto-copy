@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Automation Suite Selenium" duration-ms="82792" started-at="2018-10-17T21:21:18Z" finished-at="2018-10-17T21:22:41Z">
+  <suite name="Test Automation Suite Selenium" duration-ms="42785" started-at="2018-10-18T11:36:48Z" finished-at="2018-10-18T11:37:31Z">
     <groups>
     </groups>
-    <test name=" Test Automation Test Selenium " duration-ms="82792" started-at="2018-10-17T21:21:18Z" finished-at="2018-10-17T21:22:41Z">
+    <test name=" Test Automation Test Selenium " duration-ms="42785" started-at="2018-10-18T11:36:48Z" finished-at="2018-10-18T11:37:31Z">
       <class name="com.auto.tests.TestAutoHomePage">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.auto.tests.TestAutoHomePage@59e84876]" name="setUp" is-config="true" duration-ms="13630" started-at="2018-10-17T21:21:18Z" finished-at="2018-10-17T21:21:32Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.auto.tests.TestAutoHomePage@61a485d2]" name="setUp" is-config="true" duration-ms="5612" started-at="2018-10-18T11:36:48Z" finished-at="2018-10-18T11:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -16,7 +16,11 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="test_HomePage_Title()[pri:0, instance:com.auto.tests.TestAutoHomePage@59e84876]" name="test_HomePage_Title" duration-ms="69113" started-at="2018-10-17T21:21:32Z" finished-at="2018-10-17T21:22:41Z">
+        <test-method status="PASS" signature="test_HomePage_Title()[pri:0, instance:com.auto.tests.TestAutoHomePage@61a485d2]" name="test_HomePage_Title" duration-ms="140" started-at="2018-10-18T11:36:54Z" finished-at="2018-10-18T11:36:54Z">
+        </test-method>
+        <test-method status="PASS" signature="test_SelectCountryLocAndPrint()[pri:0, instance:com.auto.tests.TestAutoHomePage@61a485d2]" name="test_SelectCountryLocAndPrint" duration-ms="36728" started-at="2018-10-18T11:36:54Z" finished-at="2018-10-18T11:37:31Z">
+        </test-method>
+        <test-method status="PASS" signature="quitBrowswer()[pri:0, instance:com.auto.tests.TestAutoHomePage@61a485d2]" name="quitBrowswer" is-config="true" duration-ms="280" started-at="2018-10-18T11:37:31Z" finished-at="2018-10-18T11:37:31Z">
         </test-method>
       </class>
     </test>

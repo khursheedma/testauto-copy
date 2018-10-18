@@ -3,6 +3,7 @@ package com.auto.tests;
 import java.net.MalformedURLException;
 
 import org.apache.log4j.Logger;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -46,11 +47,11 @@ public class TestAutoHomePage {
 	}
 	
 	/*
-	 *  test home page launching
+	 *  test home page title
 	 */
 	
 	@Test
-	public void test_HomePage_Title() throws InterruptedException {
+	public void test_HomePage_Title() {
 		
 		logger.info("START: test_HomePage_Title");
 		objHomePage.setLogCategory("AUTO_TESTS");
@@ -62,11 +63,30 @@ public class TestAutoHomePage {
 			Assert.assertEquals("Today at Apple", actualHomePageTitle);
 			
 		}
-		objHomePage.clickProgramLocationButton();
-		
-		objHomePage.selectCountriesDropDown();
 		
 		logger.info("END: test_HomePage_Title");
+	}
+	
+	@Test
+	public void test_SelectCountryLocAndPrint() throws InterruptedException {
+		
+		logger.info("START: test_SelectCountryLocAndPrint");
+		objHomePage.setLogCategory("AUTO_TESTS");
+		
+		if (HomePageLaunch == true) {
+			
+			objHomePage.clickProgramLocationButton();
+			
+			objHomePage.selectCountriesDropDown();
+			
+		}
+		
+		logger.info("END: test_SelectCountryLocAndPrint");
+	}
+	
+	@AfterClass
+	public void quitBrowswer() {
+		driver.quitWebDriver();
 	}
 	
 	

@@ -11,7 +11,8 @@
     	<methods>
     		
     		<include name="test_HomePage_Title" />
-    	
+    		<include name="test_SelectCountryLocAndPrint" />
+    		
     	</methods>	
     </classes> 
     

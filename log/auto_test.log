@@ -6,6 +6,8 @@ INFO main AUTO_TESTS - START: test_HomePage_Title
 INFO main AUTO_TESTS - START: getHomePageTitle
 INFO main AUTO_TESTS - END: getHomePageTitle
 INFO main AUTO_TESTS - The home page title Today at Apple
+INFO main AUTO_TESTS - END: test_HomePage_Title
+INFO main AUTO_TESTS - START: test_SelectCountryLocAndPrint
 INFO main AUTO_TESTS - START: clickProgramLocationButton
 INFO main AUTO_TESTS - START: checkProgramLocationButtonEnabled
 INFO main AUTO_TESTS - END: checkProgramLocationButtonEnabled
@@ -40,4 +42,4 @@ INFO main AUTO_TESTS - United Arab Emirates
 INFO main AUTO_TESTS - United Kingdom
 INFO main AUTO_TESTS - United States
 INFO main AUTO_TESTS - END: selectCountriesDropDown
-INFO main AUTO_TESTS - END: test_HomePage_Title
+INFO main AUTO_TESTS - END: test_SelectCountryLocAndPrint
