@@ -1,0 +1,3 @@
+openai  # For GPT or any LLM
+requests  # For making HTTP requests
+pylint  # For static code analysis
