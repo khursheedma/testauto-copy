@@ -31,8 +31,6 @@ def analyze_code_changes(diff_content: str) -> List[Dict]:
         ],
         temperature=0.7,  # Control randomness
         max_tokens=2000,  # Limit the number of tokens for the output
-        top_p=1.0,  # Control diversity
-        n=1  # Number of completions to generate
     )
 
     # Extract review comments from the response
