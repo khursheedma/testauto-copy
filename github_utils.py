@@ -1,6 +1,7 @@
 import os
 import requests
 from github import Github
+import json
 
 def get_pull_request_diff():
     """Fetch the pull request diff content from GitHub"""
