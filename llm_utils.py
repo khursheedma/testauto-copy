@@ -23,7 +23,7 @@ def analyze_code_changes(diff_content: str) -> List[Dict]:
     
     # Get analysis from OpenAI
     # Use openai.ChatCompletion to interact with the model (for chat-based completions)
-    response = openai.chat.Completion.create(
+    response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",  # You can switch to "gpt-4" if you have access
         messages=[
             {"role": "system", "content": "You are an assistant that helps with code review."},
