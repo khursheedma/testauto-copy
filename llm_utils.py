@@ -30,7 +30,7 @@ def analyze_code_changes(diff_content: str) -> List[Dict]:
             {"role": "user", "content": prompt}
         ],
         temperature=0.7,  # Control randomness
-        max_tokens=2000,  # Limit the number of tokens for the output
+        max_tokens=2000  # Limit the number of tokens for the output
     )
 
     # Extract review comments from the response
