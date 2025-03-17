@@ -7,7 +7,7 @@ def analyze_code_changes(diff_content: str) -> List[Dict]:
     Analyze code changes using OpenAI's GPT model
     Returns a list of review comments
     """
-    openai.api_key = os.getenv('OPENAI_API_KEY')
+    # openai.api_key = os.getenv('OPENAI_API_KEY')
     # Prepare the prompt for the LLM
     prompt = f"""
     Analyze the following code changes and provide detailed review comments.
@@ -23,7 +23,9 @@ def analyze_code_changes(diff_content: str) -> List[Dict]:
     
     # Get analysis from OpenAI
     # Use openai.ChatCompletion to interact with the model (for chat-based completions)
-    client = OpenAI()
+    client = OpenAI(
+        api_key = os.getenv('OPENAI_API_KEY'),
+    )
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",  # You can switch to "gpt-4" if you have access
         messages=[
