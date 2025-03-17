@@ -14,10 +14,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up OpenAI API Key
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -29,6 +25,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run code review script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python pr_script.py
 
