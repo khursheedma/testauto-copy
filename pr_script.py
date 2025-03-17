@@ -15,8 +15,9 @@ class PRreviewer:
         review_comments = analyze_code_changes(diff_content)
         
         # Post comments back to GitHub
-        for comment in review_comments:
-            post_review_comment(comment)
+        if review_comments:
+            for comment in review_comments:
+                post_review_comment(comment)
 
 if __name__ == '__main__':
     reviewer = PRreviewer()
