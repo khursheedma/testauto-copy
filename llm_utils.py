@@ -1,5 +1,5 @@
 import os
-import openai
+from openai import OpenAI
 from typing import List, Dict
 
 def analyze_code_changes(diff_content: str) -> List[Dict]:
@@ -23,7 +23,8 @@ def analyze_code_changes(diff_content: str) -> List[Dict]:
     
     # Get analysis from OpenAI
     # Use openai.ChatCompletion to interact with the model (for chat-based completions)
-    response = openai.ChatCompletion.create(
+    client = OpenAI()
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",  # You can switch to "gpt-4" if you have access
         messages=[
             {"role": "system", "content": "You are an assistant that helps with code review."},
@@ -34,10 +35,10 @@ def analyze_code_changes(diff_content: str) -> List[Dict]:
     )
 
     # Extract review comments from the response
-    review_comments = response['choices'][0]['message']['content'].strip()
+    #review_comments = response['choices'][0]['message']['content'].strip()
     
     # Parse and format the response
-    #review_comments = parse_llm_response(response.choices[0].message.content)
+    review_comments = parse_llm_response(response.choices[0].message.content)
     return review_comments
 
 def parse_llm_response(response: str) -> List[Dict]:
